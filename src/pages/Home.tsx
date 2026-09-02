@@ -325,8 +325,8 @@ export default function Home() {
         <div className="wrap split split--media-first">
           <Reveal className="split__media">
             <img
-              src="/assets/img/bay.png"
-              alt="Electric vehicles charging in a marked charging bay"
+              src="/assets/img/partnership.webp"
+              alt="WAGA Motion: a black electric car charging at sunset"
               loading="lazy"
             />
           </Reveal>
