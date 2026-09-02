@@ -816,7 +816,7 @@ input::placeholder, textarea::placeholder { color: #aab7c2; }
 .footer a:hover { color: #fff; }
 .footer__grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; }
 .footer__brand-chip { display: inline-block; background: #fff; padding: 12px 16px; border-radius: var(--r-sm); margin-bottom: 20px; }
-.footer__brand-chip img { height: 46px; width: auto; }
+.footer__brand-chip img { height: 76px; width: auto; }
 .footer h4 {
   color: #fff; font-family: var(--display); font-size: .78rem; font-weight: 600;
   letter-spacing: .13em; text-transform: uppercase; margin-bottom: 18px;
