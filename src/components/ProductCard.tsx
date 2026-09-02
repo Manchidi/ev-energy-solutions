@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import type { Product } from '../data/products'
 import Reveal from './Reveal'
@@ -16,10 +15,7 @@ export default function ProductCard({
   comparisonDisabled,
   onToggleCompare,
 }: Props) {
-  const [expanded, setExpanded] = useState(false)
-  const primarySpecs = product.specs.slice(0, 3)
-  const additionalSpecs = product.specs.slice(3)
-  const detailsId = `${product.id}-specifications`
+  const outputSpec = product.specs.find((spec) => spec.k.toLowerCase().includes('output'))
 
   return (
     <Reveal as="article" className={`product${selected ? ' product--selected' : ''}`}>
@@ -47,37 +43,13 @@ export default function ProductCard({
         <h3>{product.title}</h3>
         <p className="product__model">{product.model}</p>
         <p>{product.blurb}</p>
-        <ul className="spec">
-          {primarySpecs.map((spec) => (
-            <li key={spec.k}>
-              <span className="k">{spec.k}</span>
-              <span className="v">{spec.v}</span>
+        {outputSpec && (
+          <ul className="spec">
+            <li>
+              <span className="k">{outputSpec.k}</span>
+              <span className="v">{outputSpec.v}</span>
             </li>
-          ))}
-        </ul>
-
-        {additionalSpecs.length > 0 && (
-          <>
-            <div className="product__details" id={detailsId} hidden={!expanded}>
-              <ul className="spec spec--continued">
-                {additionalSpecs.map((spec) => (
-                  <li key={spec.k}>
-                    <span className="k">{spec.k}</span>
-                    <span className="v">{spec.v}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <button
-              className="product__details-toggle"
-              type="button"
-              aria-expanded={expanded}
-              aria-controls={detailsId}
-              onClick={() => setExpanded((value) => !value)}
-            >
-              {expanded ? 'Hide specifications' : `View all ${product.specs.length} specifications`}
-            </button>
-          </>
+          </ul>
         )}
 
         <div className="product__actions">
