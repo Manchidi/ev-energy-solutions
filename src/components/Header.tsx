@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import { Link, NavLink, useLocation } from 'react-router-dom'
+import { asset } from '../lib/asset'
 
 const links = [
   { to: '/', label: 'Home' },
@@ -27,7 +28,7 @@ export default function Header() {
     <header className="header">
       <div className="wrap header__inner">
         <Link className="brand" to="/" aria-label="EV Energy Solutions home">
-          <img src="/assets/img/logo.png" alt="EV Energy Solutions" width={845} height={590} />
+          <img src={asset('/assets/img/logo.png')} alt="EV Energy Solutions" width={845} height={590} />
         </Link>
 
         <button

@@ -4,6 +4,7 @@ import Reveal from '../components/Reveal'
 import SectionHead from '../components/SectionHead'
 import { BatteryIcon, BoltIcon, SunIcon } from '../components/Icons'
 import usePageMeta from '../hooks/usePageMeta'
+import { asset } from '../lib/asset'
 
 const energyCards = [
   {
@@ -27,35 +28,35 @@ const steps = [
   {
     n: 'Step 01',
     title: 'Site assessment',
-    image: '/assets/img/kerbside.png',
+    image: asset('/assets/img/kerbside.png'),
     alt: 'An electric car charging from a public charge point on the kerbside',
     body: 'We look at the incoming supply, the distribution board, cable routes, parking layout and how long vehicles will actually be there.',
   },
   {
     n: 'Step 02',
     title: 'Design & specification',
-    image: '/assets/img/product-dc20-40.png',
+    image: asset('/assets/img/product-dc20-40.png'),
     alt: 'Compact DC charger mounted beside a parked electric vehicle',
     body: 'Electrical engineering, grid connection design and charger selection (AC, DC or ultra-fast) with load balancing, solar or storage where it earns its place.',
   },
   {
     n: 'Step 03',
     title: 'Installation',
-    image: '/assets/img/pedestals.png',
+    image: asset('/assets/img/pedestals.png'),
     alt: 'A range of charger mounting pedestals',
     body: 'Civil work, mounting, cabling, protection and network connectivity, carried out to the approved design.',
   },
   {
     n: 'Step 04',
     title: 'Commissioning',
-    image: '/assets/img/product-dc60-240.png',
+    image: asset('/assets/img/product-dc60-240.png'),
     alt: 'Floor-standing DC fast charger ready for use',
     body: 'Chargers are tested under load, connected to the management platform, configured with tariffs and access rules, and handed over live.',
   },
   {
     n: 'Step 05',
     title: 'Operation & support',
-    image: '/assets/img/bay.png',
+    image: asset('/assets/img/bay.png'),
     alt: 'Electric vehicles charging side by side in a charging bay',
     body: 'Remote monitoring, diagnostics, firmware updates and maintenance keep the station available and the reporting accurate.',
   },
@@ -142,7 +143,7 @@ export default function Solutions() {
           </Reveal>
           <Reveal className="split__media">
             <img
-              src="/assets/img/kerbside.png"
+              src={asset('/assets/img/kerbside.png')}
               alt="An electric car charging from a public charge point on the kerbside"
               loading="lazy"
             />
@@ -155,7 +156,7 @@ export default function Solutions() {
         <div className="wrap split split--media-first">
           <Reveal className="split__media">
             <img
-              src="/assets/img/hub.png"
+              src={asset('/assets/img/hub.png')}
               alt="A charging hub with a power cabinet feeding several charging dispensers"
               loading="lazy"
             />

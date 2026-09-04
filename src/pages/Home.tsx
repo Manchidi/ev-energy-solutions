@@ -6,6 +6,7 @@ import SectionHead from '../components/SectionHead'
 import StatBand from '../components/StatBand'
 import { BoltIcon, BuildingIcon, GlobeIcon, HomeIcon, ShieldIcon, TruckIcon } from '../components/Icons'
 import usePageMeta from '../hooks/usePageMeta'
+import { asset } from '../lib/asset'
 
 const services = [
   {
@@ -33,19 +34,19 @@ const services = [
 const hardware = [
   {
     title: 'AC 7-43 kW',
-    image: '/assets/img/product-cp308.png',
+    image: asset('/assets/img/product-cp308.png'),
     alt: 'AC wall-mounted charger connected to a parked car',
     body: 'Wall boxes and pedestals for homes, offices, retail parking and destination charging. Single or dual outlet, Type 2, RFID or app start.',
   },
   {
     title: 'DC 20-240 kW',
-    image: '/assets/img/product-dc60-240.png',
+    image: asset('/assets/img/product-dc60-240.png'),
     alt: 'Floor-standing DC fast charger with dual cables',
     body: 'Wall-mounted and floor-standing fast chargers with CCS2 and CHAdeMO outlets for public sites, forecourts and fleet depots.',
   },
   {
     title: 'Ultra-fast 240-720 kW',
-    image: '/assets/img/product-dc240-720.png',
+    image: asset('/assets/img/product-dc240-720.png'),
     alt: 'Split-system ultra-fast charging hub with power cabinet and multiple dispensers',
     body: 'Split power cabinets feeding up to eight dispensers at up to 350 A, with flexible power sharing across bays for highway hubs.',
   },
@@ -141,7 +142,7 @@ export default function Home() {
 
           <div className="hero__media">
             <img
-              src="/assets/img/hero.png"
+              src={asset('/assets/img/hero.png')}
               alt="An electric SUV charging at a public DC fast charger"
               width={1556}
               height={1167}
@@ -325,7 +326,7 @@ export default function Home() {
         <div className="wrap split split--media-first">
           <Reveal className="split__media">
             <img
-              src="/assets/img/partnership.webp"
+              src={asset('/assets/img/partnership.webp')}
               alt="WAGA Motion: a black electric car charging at sunset"
               loading="lazy"
             />

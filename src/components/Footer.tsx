@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { footerNav, site } from '../data/site'
+import { asset } from '../lib/asset'
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         <div className="footer__grid">
           <div>
             <span className="footer__brand-chip">
-              <img src="/assets/img/logo.png" alt={site.name} width={845} height={590} />
+              <img src={asset('/assets/img/logo.png')} alt={site.name} width={845} height={590} />
             </span>
             <p>{site.blurb}</p>
           </div>

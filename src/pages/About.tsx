@@ -3,6 +3,7 @@ import CtaBand from '../components/CtaBand'
 import Reveal from '../components/Reveal'
 import SectionHead from '../components/SectionHead'
 import usePageMeta from '../hooks/usePageMeta'
+import { asset } from '../lib/asset'
 
 const strengths = [
   {
@@ -78,7 +79,7 @@ export default function About() {
           </Reveal>
           <Reveal className="split__media">
             <img
-              src="/assets/img/bay.png"
+              src={asset('/assets/img/bay.png')}
               alt="Electric vehicles charging side by side in a dedicated charging bay"
               loading="lazy"
             />
@@ -110,7 +111,7 @@ export default function About() {
         <div className="wrap split split--media-first">
           <Reveal className="split__media">
             <img
-              src="/assets/img/hub.png"
+              src={asset('/assets/img/hub.png')}
               alt="Charging hub with a power cabinet feeding a row of charging dispensers"
               loading="lazy"
             />

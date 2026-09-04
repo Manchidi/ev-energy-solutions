@@ -4,6 +4,8 @@
  * revision and do not add figures that are not published there.
  */
 
+import { asset } from '../lib/asset'
+
 export type Family = 'ac' | 'dc' | 'ultra'
 
 export type Product = {
@@ -41,7 +43,7 @@ export const products: Product[] = [
     title: 'Compact home wall box',
     model: 'HP102',
     tag: 'Home',
-    image: '/assets/img/product-hp102.png',
+    image: asset('/assets/img/product-hp102.png'),
     alt: 'HP102 compact AC wall charger mounted in a garage',
     blurb:
       'The smallest unit in the range and the natural choice for a house or a single bay. Tethered Type 2 cable, optional 2.8″ screen, RFID or app start.',
@@ -60,7 +62,7 @@ export const products: Product[] = [
     title: 'Wall box with touchscreen',
     model: 'CP306 · S / E / T / D',
     tag: 'Home · Business',
-    image: '/assets/img/product-cp306.png',
+    image: asset('/assets/img/product-cp306.png'),
     alt: 'CP306 AC wall charger with a car parked alongside',
     blurb:
       'A 7″ screen for session information and pricing, up to 43 kW three-phase. Suited to workplaces and customer parking where drivers expect feedback.',
@@ -79,7 +81,7 @@ export const products: Product[] = [
     title: 'Weather-sealed wall box',
     model: 'CP308 · S / E / T / D',
     tag: 'Outdoor',
-    image: '/assets/img/product-cp308.png',
+    image: asset('/assets/img/product-cp308.png'),
     alt: 'CP308 AC wall charger charging a white car',
     blurb:
       'The same 7″ interface in an IP66 enclosure, for exposed outdoor bays and wash-down environments.',
@@ -98,7 +100,7 @@ export const products: Product[] = [
     title: 'Dual-outlet wall box',
     model: 'DP308',
     tag: 'Two bays',
-    image: '/assets/img/product-dp308.png',
+    image: asset('/assets/img/product-dp308.png'),
     alt: 'DP308 dual-outlet AC charger serving two bays',
     blurb:
       'Two independent outlets from one unit, the efficient way to cover two adjacent bays in a parkade or staff car park. Tethered cable or socket.',
@@ -134,7 +136,7 @@ export const products: Product[] = [
     title: 'Free-standing pedestal, two sockets',
     model: 'LP-CP308D',
     tag: 'Pedestal',
-    image: '/assets/img/product-lp-cp308d.png',
+    image: asset('/assets/img/product-lp-cp308d.png'),
     alt: 'LP-CP308D pedestal charger next to a parked car',
     blurb:
       'For open parking where there is no wall to mount to. Two 22 kW sockets on one pedestal, with a 7″ screen at driver height.',
@@ -153,7 +155,7 @@ export const products: Product[] = [
     title: 'Charging column with 55″ display',
     model: 'DP55',
     tag: 'Advertising',
-    image: '/assets/img/product-dp55.png',
+    image: asset('/assets/img/product-dp55.png'),
     alt: 'DP55 charging column with a large advertising display',
     media: { scale: 1.09, position: 'left center', origin: 'left center' },
     blurb:
@@ -173,7 +175,7 @@ export const products: Product[] = [
     title: '28 kW wall-mounted DC',
     model: 'M4SW-DC28 · M4DW-DC28',
     tag: 'Single-phase DC',
-    image: '/assets/img/product-dc28.png',
+    image: asset('/assets/img/product-dc28.png'),
     alt: '28 kW wall-mounted DC charger with cable connected to a car',
     blurb:
       'DC fast charging from a single-phase 240 V supply, useful where three-phase is not available. Choose one outlet, or two that share the 28 kW.',
@@ -192,7 +194,7 @@ export const products: Product[] = [
     title: '20-40 kW compact DC',
     model: 'M4SW-DC20 / DC30 / DC40',
     tag: 'Compact',
-    image: '/assets/img/product-dc20-40.png',
+    image: asset('/assets/img/product-dc20-40.png'),
     alt: 'Compact wall-mounted DC charger charging a blue SUV',
     blurb:
       'At 38 kg this mounts on a wall or a slim pedestal, which makes it the practical choice for urban top-up sites and small depots.',
@@ -211,7 +213,7 @@ export const products: Product[] = [
     title: '30-60 kW dual-outlet DC',
     model: 'M4DW-DC30 / DC40 / DC60',
     tag: 'Two bays',
-    image: '/assets/img/product-dc30-60.png',
+    image: asset('/assets/img/product-dc30-60.png'),
     alt: 'Dual-outlet DC charger installed behind a parked electric car',
     media: { scale: 1.015, position: 'left center', origin: 'left center' },
     blurb:
@@ -231,7 +233,7 @@ export const products: Product[] = [
     title: '60-240 kW floor-standing DC',
     model: 'M4DS-DC60-DC240',
     tag: 'Public network',
-    image: '/assets/img/product-dc60-240.png',
+    image: asset('/assets/img/product-dc60-240.png'),
     alt: 'Floor-standing DC fast charger with two charging cables',
     media: { scale: 1.04, position: 'left center', origin: 'left center' },
     blurb:
@@ -251,7 +253,7 @@ export const products: Product[] = [
     title: '60-240 kW with media screen',
     model: 'DC-AD',
     tag: 'Advertising',
-    image: '/assets/img/product-dc-ad.png',
+    image: asset('/assets/img/product-dc-ad.png'),
     alt: 'DC fast charger with a large vertical advertising screen',
     media: { scale: 1.025, position: 'left center', origin: 'left center' },
     blurb:
@@ -271,7 +273,7 @@ export const products: Product[] = [
     title: 'Pedestals & mounting',
     model: 'Accessories',
     tag: 'Mounting',
-    image: '/assets/img/pedestals.png',
+    image: asset('/assets/img/pedestals.png'),
     alt: 'Range of charger mounting pedestals',
     blurb:
       'Where there is no wall, chargers go on a pedestal. Single, triangular, hexagonal and back-to-back options let one foundation serve one to four bays.',
@@ -289,7 +291,7 @@ export const products: Product[] = [
     title: 'Split-system power cabinet',
     model: 'M4DP-DC 240 / 360 / 480 / 720 kW',
     tag: 'Highway hub',
-    image: '/assets/img/product-dc240-720.png',
+    image: asset('/assets/img/product-dc240-720.png'),
     alt: 'Split-system charging hub with a central power cabinet and a row of dispensers',
     media: { scale: 1.065, position: 'left center', origin: 'left center' },
     blurb:
