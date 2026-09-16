@@ -4,7 +4,6 @@ import Button from '../components/Button'
 import CtaBand from '../components/CtaBand'
 import ProductCard from '../components/ProductCard'
 import Reveal from '../components/Reveal'
-import SectionHead from '../components/SectionHead'
 import { families, products, type Family, type Product } from '../data/products'
 import usePageMeta from '../hooks/usePageMeta'
 
@@ -87,9 +86,6 @@ export default function Products() {
           <div className="btn-row" style={{ marginTop: 26 }}>
             <Button to="/contact" arrow>
               Request pricing
-            </Button>
-            <Button href="#standards" variant="ghost">
-              Standards &amp; certification
             </Button>
           </div>
         </div>
@@ -255,96 +251,6 @@ export default function Products() {
               </div>
             )
           })}
-        </div>
-      </section>
-
-      {/* ---------- shared specifications ---------- */}
-      <section className="section section--surface" id="standards" style={{ scrollMarginTop: 80 }}>
-        <div className="wrap">
-          <SectionHead
-            split
-            eyebrow="Across the range"
-            title={
-              <>
-                Standards, connectivity
-                <br />
-                and protection
-              </>
-            }
-            body="These apply to every charger we supply, whichever model ends up on your site."
-          />
-
-          <div className="grid grid--2">
-            <Reveal as="article" className="card">
-              <h3>Communication &amp; access</h3>
-              <ul className="spec spec--flush" style={{ marginTop: 18 }}>
-                <li>
-                  <span className="k">Protocol</span>
-                  <span className="v">OCPP 1.6J · upgradeable to OCPP 2.0.1</span>
-                </li>
-                <li>
-                  <span className="k">Plug &amp; Charge</span>
-                  <span className="v">ISO/IEC 15118 (model dependent)</span>
-                </li>
-                <li>
-                  <span className="k">Network · AC</span>
-                  <span className="v">LAN, Wi-Fi, Bluetooth · 3G/4G optional</span>
-                </li>
-                <li>
-                  <span className="k">Network · DC</span>
-                  <span className="v">Ethernet, Wi-Fi, 3G/4G SIM</span>
-                </li>
-                <li>
-                  <span className="k">Authentication</span>
-                  <span className="v">RFID (ISO/IEC 14443 A/B) and mobile app</span>
-                </li>
-                <li>
-                  <span className="k">Payment</span>
-                  <span className="v">Card terminal optional on DC models</span>
-                </li>
-              </ul>
-            </Reveal>
-
-            <Reveal as="article" className="card">
-              <h3>Compliance &amp; environment</h3>
-              <ul className="spec spec--flush" style={{ marginTop: 18 }}>
-                <li>
-                  <span className="k">AC safety</span>
-                  <span className="v">IEC 61851-1 · IEC 61851-21-2</span>
-                </li>
-                <li>
-                  <span className="k">DC safety</span>
-                  <span className="v">IEC 61851-1 · -23 · EMI/EMC IEC 61851-21-2</span>
-                </li>
-                <li>
-                  <span className="k">Connectors</span>
-                  <span className="v">Type 2 (IEC 62196-2), CCS2, CHAdeMO</span>
-                </li>
-                <li>
-                  <span className="k">Certification</span>
-                  <span className="v">CE, CB, UKCA · TR25 &amp; RCM on selected models</span>
-                </li>
-                <li>
-                  <span className="k">Operating temp.</span>
-                  <span className="v">−30 °C to +50 °C AC · to +60 °C DC with derating</span>
-                </li>
-                <li>
-                  <span className="k">Altitude · humidity</span>
-                  <span className="v">2000 m no derating · 5-95% non-condensing</span>
-                </li>
-              </ul>
-            </Reveal>
-          </div>
-
-          <Reveal className="card" style={{ marginTop: 20 }}>
-            <h3>Protection, on every unit</h3>
-            <p style={{ maxWidth: '82ch' }}>
-              Over- and under-voltage, over-current, over-temperature and short-circuit protection;
-              surge protection; earth/grounding protection; control pilot fault detection; relay
-              welding detection; 6 mA DC residual current detection; and an emergency stop on DC
-              cabinets.
-            </p>
-          </Reveal>
         </div>
       </section>
 

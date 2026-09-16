@@ -321,37 +321,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* ---------- partnership ---------- */}
-      <section className="section section--surface">
-        <div className="wrap split split--media-first">
-          <Reveal className="split__media">
-            <img
-              src={asset('/assets/img/partnership.webp')}
-              alt="WAGA Motion: a black electric car charging at sunset"
-              loading="lazy"
-            />
-          </Reveal>
-          <Reveal>
-            <p className="eyebrow">Strategic partnership</p>
-            <h2>Local delivery, world-class equipment</h2>
-            <p>
-              WAGA Motion Limited is our primary equipment supplier and hardware co-developer. The
-              partnership pairs their manufacturing precision and broad product catalogue with our
-              local expertise in deployment, installation and operations.
-            </p>
-            <p>
-              The result is ISO/IEC-compliant smart charging technology delivered across Southern
-              Africa, specified, installed and supported by a team on the ground.
-            </p>
-            <p style={{ marginTop: 22 }}>
-              <Link className="arrow-link" to="/about">
-                More about the company
-              </Link>
-            </p>
-          </Reveal>
-        </div>
-      </section>
-
       <CtaBand
         title="Tell us about your site"
         body="Share the location, available supply and how long vehicles will be parked. We will come back with a charger configuration, a layout and the electrical work it needs."

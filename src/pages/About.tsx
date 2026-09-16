@@ -111,8 +111,8 @@ export default function About() {
         <div className="wrap split split--media-first">
           <Reveal className="split__media">
             <img
-              src={asset('/assets/img/hub.png')}
-              alt="Charging hub with a power cabinet feeding a row of charging dispensers"
+              src={asset('/assets/img/WAGA_Motion_Logo.jpg')}
+              alt="WAGA Motion Limited logo"
               loading="lazy"
             />
           </Reveal>
@@ -120,14 +120,13 @@ export default function About() {
             <p className="eyebrow">Strategic partnership</p>
             <h2>WAGA Motion Limited</h2>
             <p>
-              A cornerstone of our operations is the strategic partnership with WAGA Motion Limited,
-              our primary equipment supplier and hardware co-developer.
+              WAGA Motion Limited is our primary equipment supplier and hardware co-developer. The
+              partnership pairs their manufacturing precision and broad product catalogue with our
+              local expertise in deployment, installation and operations.
             </p>
             <p>
-              The alliance lets us deliver world-class, ISO/IEC-compliant smart EV charging technology
-              across Southern Africa. WAGA Motion contributes proven manufacturing precision and an
-              extensive product catalogue; we contribute local expertise in deployment, installation
-              and operations.
+              The result is ISO/IEC-compliant smart charging technology delivered across Southern
+              Africa, specified, installed and supported by a team on the ground.
             </p>
             <ul className="tick-list">
               <li>Hardware co-developed rather than simply resold</li>
